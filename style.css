@@ -106,3 +106,36 @@ header p {
   /* Makes the original font color transparent so the gradient shows through */
   -webkit-text-fill-color: transparent;
 }
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.btn {
+  height: 2.4rem;
+  width: 6rem;
+  font-size: 1.1rem;
+  padding: 2px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+
+.msg {
+  background: #6366f1;
+}
+
+.follow {
+  background: #1b9949;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
