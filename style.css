@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
+.profile-container {
+  height: auto;
+  width: 80%;
+  background-color: #f4f1f8;
+  color: #2d2a32;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
+
 .profile-card,
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.6rem;
   flex-direction: column;
+  font-family: Arial, sans-serif;
 }
 
 .profile-photo {
@@ -28,4 +39,10 @@ header {
   object-position: center 45%;
   /* zoom the face */
   transform: scale(1.2);
+}
+
+header h1 {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #334155;
 }
