@@ -6,16 +6,20 @@
 
 .profile-container {
   height: auto;
-  width: 80%;
+  /* width: 80%; */
+  max-width: 600px;
   background-color: #f4f1f8;
   color: #2d2a32;
   padding: 2rem 3rem;
-  margin: 0 auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 .profile-card,
 header {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   gap: 0.6rem;
@@ -73,4 +77,32 @@ header p {
   list-style: none;
   text-decoration: none;
   font-size: 2.3rem;
+}
+
+.fa-github {
+  color: #1f2328;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+/* Target the icon specifically */
+.fa-instagram {
+  /* Official Instagram brand gradient colors */
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+
+  /* Clips the background gradient to the shape of the icon font */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Makes the original font color transparent so the gradient shows through */
+  -webkit-text-fill-color: transparent;
 }
