@@ -33,6 +33,7 @@ header {
   border-radius: 50%;
   overflow: hidden;
   display: block;
+  transition: all 0.3s;
 }
 
 .profile-photo img {
@@ -43,6 +44,11 @@ header {
   object-position: center 45%;
   /* zoom the face */
   transform: scale(1.2);
+}
+
+.profile-photo:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 header h1 {
@@ -105,6 +111,14 @@ header p {
 
   /* Makes the original font color transparent so the gradient shows through */
   -webkit-text-fill-color: transparent;
+}
+
+.fa-brands {
+  transition: all 0.3s;
+}
+
+.fa-brands:hover {
+  transform: scale(1.1);
 }
 
 .cta {
